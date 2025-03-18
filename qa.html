@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
+    <meta charset="UTF-8" />
+    <title>カノアヴィラ</title>
+    <!-- XSS保護 (現代のブラウザでは自動ですが念のため) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="キーワード" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="email=no,telephone=no,address=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-free/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: "ease-in-sine",
+        delay: 0,
+        once: true,
+      });
+    </script>
+    <header>
+      <div class="h-wrap">
+        <h1 class="logo-box">
+          <a href="index.html" class="fade">
+            <img src="img/common/logo01.png" alt="カノアヴィラ" />
+          </a>
+        </h1>
+      </div>
+      <div class="header-others-btn">
+        <a href="https://www.yamanashi-spa-glamping.com/" target="_blank">グランピング施設</a>
+      </div>
+      <input type="checkbox" id="slide-menu-check" />
+      <label for="slide-menu-check" class="slide-menu-btn">
+        <div class="bdr-box">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+      <div class="slide-menu">
+        <div class="logo-box">
+          <div class="img-box">
+            <a href="index.html" class="fade">
+              <img src="img/common/logo02.png" alt="カノアヴィラ" />
+            </a>
+          </div>
+        </div>
+        <div class="lang-btn">
+          <input type="checkbox" id="lang-btn" />
+          <label for="lang-btn">
+            <i class="fa-solid fa-globe"></i>
+            <span>日本語</span>
+          </label>
+          <ul class="lang-list">
+            <li><a href="https://en.chichibu-privatevilla-komura.com" lang="en" class="fade">English</a></li>
+          </ul>
+        </div>
+        <div class="btn-box">
+          <div class="item">
+            <a href="mailto:kanoa.fujiyamanakako@gmail.com?subject=【カノア 富士山中湖 ヴィラ】お問い合わせ&amp;cc=k.tokunaga@kanoagp.com">メール問合はこちら</a>
+          </div>
+          <div class="item">
+            <a href="https://reserve.489ban.net/client/gr-kanoa/0/plan/stay?planTags%5B21498%5D=1&amp;searchTagMode=0&amp;keepTags=2" class="reservation" target="_blank">ご予約はこちら</a>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <div>
+            <ul class="menu">
+              <li>
+                <a href="index.html">トップページ</a>
+              </li>
+              <li>
+                <a href="room.html">お部屋</a>
+              </li>
+              <li>
+                <a href="spa.html">客室温泉</a>
+              </li>
+              <li>
+                <a href="sauna.html">客室サウナ</a>
+              </li>
+              <li>
+                <a href="meal.html">お食事</a>
+              </li>
+              <li>
+                <a href="news_index.html">お知らせ</a>
+              </li>
+              <li>
+                <a href="index.html#access">アクセス</a>
+              </li>
+              <li>
+                <a href="surrounding_index.html">周辺観光</a>
+              </li>
+              <li>
+                <a href="qa.html">よくある質問</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="right-fixed-btn hover-all fade">
+      <a href="https://reserve.489ban.net/client/gr-kanoa/0/plan/stay?planTags%5B21498%5D=1&amp;searchTagMode=0&amp;keepTags=2" target="_blank">ご予約はこちら</a>
+      <p class="jp-txt">ご予約はこちら</p>
+      <p class="en-txt">RESERVATION</p>
+    </div>
+
+    <div class="key-visual" data-aos="fade-zoom-in">
+      <div class="key-img">
+        <img src="img/page/qa/key.jpg" alt="よくあるご質問" />
+      </div>
+      <div class="key-txt">
+        <h2>よくあるご質問</h2>
+      </div>
+    </div>
+    <div class="breadcrumbs" data-aos="fade-zoom-in">
+      <div class="container">
+        <ul class="breadcrumbs-list">
+          <li>
+            <a href="index.html">TOP</a>
+          </li>
+          <li>よくあるご質問</li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <ul class="anchor-list">
+          <li>
+            <a href="#link01">施設について</a>
+          </li>
+          <li>
+            <a href="#link02">設備・備品について</a>
+          </li>
+          <li>
+            <a href="#link03">食事について</a>
+          </li>
+          <li>
+            <a href="#link04">その他</a>
+          </li>
+        </ul>
+
+        <div class="owl100 owl80-tb">
+          <section id="link01">
+            <h4>施設について</h4>
+            <ul class="qa-list">
+              <li>
+                <p class="q-txt">定員は何名ですか？</p>
+                <p class="a-txt">
+                  ・富士ビュー：2～6名<br />
+                  ・富士ビューグランデ：2～10名<br />
+                  ・富士ビューデラックススイート：2～10名<br />
+                  ・フォレストガーデン：2～6名<br />
+                  ・フォレストシアター：2～6名<br />
+                  ・フォレストサウナ：2～6名<br />
+                  ・ドッグスイート【愛犬同伴可能】：2～6名<br />
+                  ・ドッグガーデン【愛犬同伴可能】：2～6名<br />
+                  となります。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">ベッド数は？</p>
+                <p class="a-txt">
+                  ・富士ビュー<br />
+                  シングルベッド×2<br />
+                  ダブルベッド×1<br />
+                  5名様以上の場合にはエキストラベッドをご用意いたします。<br />
+                  ※4名様以内でエキストラベッドをご希望の場合は有料となります。<br /><br />
+
+                  ・富士ビューグランデ<br />
+                  シングルベッド×4<br />
+                  ダブルベッド×1<br />
+                  7名様以上の場合はエキストラベッドをご用意いたします。<br />
+                  ※6名様以内でエキストラベッドをご希望の場合には有料となります。<br /><br />
+
+                  ・富士ビューデラックススイート<br />
+                  シングルベッド×4<br />
+                  ダブルベッド×1<br />
+                  7名様以上の場合はエキストラベッドをご用意いたします。<br />
+                  ※6名様以内でエキストラベッドをご希望の場合には有料となります。<br /><br />
+
+                  ・フォレストガーデン<br />
+                  シングルベッド×2<br />
+                  ダブルベッド×1<br />
+                  5名様以上の場合にはエキストラベッドをご用意いたします。<br />
+                  ※4名様以内でエキストラベッドをご希望の場合は有料となります。<br /><br />
+
+                  ・フォレストシアター<br />
+                  シングルベッド×2<br />
+                  ダブルベッド×1<br />
+                  5名様以上の場合にはエキストラベッドをご用意いたします。<br />
+                  ※4名様以内でエキストラベッドをご希望の場合は有料となります。<br /><br />
+
+                  ・フォレストサウナ<br />
+                  シングルベッド×2<br />
+                  ダブルベッド×1<br />
+                  5名様以上の場合にはエキストラベッドをご用意いたします。<br />
+                  ※4名様以内でエキストラベッドをご希望の場合は有料となります。<br /><br />
+
+                  ・ドッグスイート【愛犬同伴可能】<br />
+                  シングルベッド×2<br />
+                  ダブルベッド×1<br />
+                  5名様以上の場合にはエキストラベッドをご用意いたします。<br />
+                  ※4名様以内でエキストラベッドをご希望の場合は有料となります。<br /><br />
+
+                  ・ドッグガーデン【愛犬同伴可能】<br />
+                  シングルベッド×2<br />
+                  ダブルベッド×1<br />
+                  5名様以上の場合にはエキストラベッドをご用意いたします。<br />
+                  ※4名様以内でエキストラベッドをご希望の場合は有料となります。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">チェックイン・アウトは？</p>
+                <p class="a-txt">チェックインは15：00～、チェックアウトは翌日10：00までです。</p>
+              </li>
+              <li>
+                <p class="q-txt">お支払い方法は？</p>
+                <p class="a-txt">現金・各種クレジットカードがご利用いただけます。</p>
+              </li>
+              <li>
+                <p class="q-txt">キャンセル料はかかりますか？</p>
+                <p class="a-txt">27日前50％、7日前から100％が発生します。</p>
+              </li>
+              <li>
+                <p class="q-txt">わんちゃんはOKですか？</p>
+                <p class="a-txt">ドッグスイート、ドッグガーデンのお部屋のみ、わんちゃんの同伴可能です。</p>
+              </li>
+              <li>
+                <p class="q-txt">わんちゃんは何頭まで受け入れ可能ですか？</p>
+                <p class="a-txt">
+                  ドッグスイート、ドッグガーデンの各お部屋、5頭までとなります。犬種制限はございません。<br />
+                  ※大型犬３頭以上同伴の場合は、事前にお問合せください。
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="link02">
+            <h4>設備・備品について</h4>
+            <ul class="qa-list">
+              <li>
+                <p class="q-txt">アメニティはなにがありますか？</p>
+                <p class="a-txt">
+                  パジャマ（大人用）、タオルセット(バスタオル・フェイスタオル)、シャンプー、コンディショナー、ボディソープ、ハンドソープ、歯ブラシ、洗顔料 のご用意がございます。<br />
+                  ※お子様用のパジャマのご用意はございませんので予めご了承ください。<br />
+                  ※カミソリ、ブラシ、綿棒、コットン、メイク落としは管理棟にてご用意しております。チェックイン時にお申し付けください。<br />
+                  詳細はお部屋ページ「客室詳細」をご確認ください。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">設備・備品は何がありますか？</p>
+                <p class="a-txt">客室温泉露天風呂、BBQガスグリル（有料：4,000円）、電子レンジ（管理棟にて共有）、冷蔵庫、電気ポット、ドライヤー、フライパン、皿各種、トング、耐火手袋がございます。</p>
+              </li>
+              <li>
+                <p class="q-txt">温泉露天風呂にシャワースペースはありますか？</p>
+                <p class="a-txt">はい。全お部屋に個別のシャワールームを設置しております。</p>
+              </li>
+              <li>
+                <p class="q-txt">駐⾞場はありますか？</p>
+                <p class="a-txt">
+                  施設から約100m・徒歩1分のご移動がかかりますが、無料駐車場をご用意しております。<br />
+                  複数台で来られるお客様でも問題ございません。<br />
+                  先に施設までお越しいただき、お部屋に荷物をお入れいただくことも可能です。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">焚き火はできますか？</p>
+                <p class="a-txt">
+                  はい、どのお部屋でも可能です。専用の焚き火台をご利用ください。<br />
+                  ※お時間は21時までとさせていただきます。<br />
+                  ※無料の薪で30分～1時間お楽しみいただけます。
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section id="link03">
+            <h4>食事について</h4>
+            <ul class="qa-list">
+              <li>
+                <p class="q-txt">食材の持ち込みは可能ですか？</p>
+                <p class="a-txt">
+                  可能です。お好きな食材を持込んでのオリジナルBBQをお楽しみいただけます。<br />
+                  ※素泊りプランにてBBQを行う場合はオプションのBBQグリルをオーダーください。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">BBQコンロは持ち込んでいいですか？</p>
+                <p class="a-txt">火器類の持ち込みは一切禁止となっております。ご了承ください。備え付けのBBQガスグリルをご利用ください。</p>
+              </li>
+              <li>
+                <p class="q-txt">近くにコンビニやスーパーはありますか？</p>
+                <p class="a-txt">
+                  ローソン山中湖石割店…お車で2分<br />
+                  オギノ山中湖店…お車で13分<br />
+                  セブン-イレブン 山梨山中湖平野店…お車で5分
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">アレルギー対応は可能ですか？</p>
+                <p class="a-txt">可能な限り対応致します。お問合せメールよりご連絡くださいませ。</p>
+              </li>
+            </ul>
+          </section>
+          <section id="link04">
+            <h4>その他</h4>
+            <ul class="qa-list">
+              <li>
+                <p class="q-txt">花⽕は可能ですか？</p>
+                <p class="a-txt">
+                  手持ち花火のみ可能です。チェックインのお手続きの際に指定の場所をご案内いたします。<br />
+                  ※打上げ、噴射式など、手持ち花火以外は禁止させて頂いております。<br />
+                  ※お時間は21時までとさせていただきます。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">入浴剤を持ち込んでの使用は可能でしょうか？</p>
+                <p class="a-txt">
+                  配管のつまりや汚れにつながる可能性があるため、入浴剤の持ち込みはNGとなっております。<br />
+                  当館のお風呂は温泉水を使用しておりますので、ぜひ地元の温泉水をお楽しみくださいませ。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">食のアクティビティ体験は予約制ですか？</p>
+                <p class="a-txt">
+                  事前予約なしでお楽しみいただけます。<br />
+                  ピザセット・燻製機・お野菜マルシェをお部屋にご用意しております。<br />
+                  お好みの具材を持込みいただくことも可能です。
+                </p>
+              </li>
+              <li>
+                <p class="q-txt">食のアクティビティ体験は有料ですか？</p>
+                <p class="a-txt">無料でお楽しみいただけます。</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div id="resort-rg">
+      <div class="rg_group">
+        <p class="en-ttl white-txt center-text">ResortGlamping.com</p>
+        <h4 class="top white-txt center-text">リゾートグランピングドットコム掲載施設</h4>
+        <div class="box">
+          <ul>
+            <li class="hover-all fade">
+              <a href="https://www.fuji-kawaguchiko-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/12/rg-noborizaka.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/12/rg-noborizaka.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】河口湖BASE DOME GLAMPING登り坂</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.forest-side-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/05/forest_ymnk.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/05/forest_ymnk.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】＜最大10名で泊まれる＞フォレストサイド山中湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.kawaguchiko-glampingresort.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/02/sop.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/02/sop.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】ヴィラグランピング-S.O.P富士河口湖-</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.yamanashi-dogglamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/02/dog_gl_kawaguchiko.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/02/dog_gl_kawaguchiko.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】ドッググランピング河口湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.yamanashi-dogresort.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/02/dog_villa_fujikawaguchiko.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2024/02/dog_villa_fujikawaguchiko.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】ドッグヴィラ富士河口湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.fuji-yamanashi-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/awaumi.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/awaumi.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】AWAUMI</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.suiteglamping-kawaguchiko.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/suiteglampingkawagutiko.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/suiteglampingkawagutiko.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】スイートグランピング河口湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.minamialps-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/osotonoterasu.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/osotonoterasu.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】おそとのてらす</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.glamping-fujikawaguchiko.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/hoshifulldome.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/hoshifulldome.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】HOSHIFULL DOME FUJI</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.glamping-fujiyamanashi.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/thedoor.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/thedoor.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】THE DOOR</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.yamanashi-sauna-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/totonoi.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/totonoi.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】グランピングヴィレッジTOTONOI富士山中湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.yamanakako-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/piilo.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/piilo.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】piilo-ピーロ- asobi＆stay</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.fuji-privatevilla.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/suitevillas.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/suitevillas.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】グランピングコテージ河口湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.fuji-resortglamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/varie.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/varie.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】Glamping Resort Varie</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.fuji-trailer-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/kunerutasu.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/kunerutasu.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】くうねるたす</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.glamping-yatsugatake.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/runyatsugatake.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/runyatsugatake.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】なごみリゾートRun八ヶ岳</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.glamping-fuji-trailer.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/fujifumoto.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/fujifumoto.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】ふじ・ふもとの森</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.mt-fuji-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/fujipanorama.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/fujipanorama.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】Mount Fuji Panorama Glamping</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.privatevilla-fuji.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/fujiyasan.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/fujiyasan.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】ヴィラ 富士やさん</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.fuji-farm-glamping.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/farmfuji.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/farmfuji.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】グランファーム富士河口湖</p>
+              </div>
+            </li>
+            <li class="hover-all fade">
+              <a href="https://www.glamping-oshino.com/" target="_blank"></a>
+              <div class="photo">
+                <section
+                  style="width: 90px; height: 60px; background-size: cover; background-image: url('https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/oshino.jpg')"
+                  class="lazyloaded"
+                  data-back="https://www.yamanashi-spa-glamping.com/wp-content/uploads/2023/09/oshino.jpg"
+                ></section>
+              </div>
+              <div class="txt">
+                <p class="ttl">【山梨】GLAMP DOME -グランドーム- 富士忍野</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="rg_details">
+          <div class="item">
+            <p class="ttl">
+              <a href="https://www.resort-glamping.com/" target="_blank"> リゾートグランピングドットコムとは？ <i class="fas fa-external-link-alt"></i> </a>
+            </p>
+            <p class="txt">
+              関東・関西・東海・中国エリアを中心とした国内の厳選されたグランピング施設をネット予約できるポータルサイト。実際に訪問した方のクチコミや旅レポーターによる体験記、観光情報も満載！
+            </p>
+          </div>
+          <div class="item">
+            <p class="ttl">
+              <a href="https://www.resort-glamping.com/" target="_blank">グランピング施設をお探しの方へ <i class="fas fa-external-link-alt"></i> </a>
+            </p>
+            <p class="txt">エリア、宿泊・日帰りプラン、施設のスペックなどからグランピング施設をお選びいただき、ご予約まで行っていただけます。</p>
+          </div>
+          <div class="item">
+            <p class="ttl">
+              <a href="https://www.resort-glamping.com/participation/" target="_blank"> 施設運営者様へ <i class="fas fa-external-link-alt"></i> </a>
+            </p>
+            <p class="txt">リゾート事業30年で培った「閑散期対策」「冬対策」「遊休地活用」「集客ノウハウ」「広告ノウハウ」を共有いたします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="f-wrap">
+          <div class="l-box">
+            <div class="logo-box">
+              <a href="index.html" class="fade">
+                <img src="img/common/logo01.png" alt="カノアヴィラ" />
+              </a>
+            </div>
+            <p class="address-txt">
+              〒401-0502<br />
+              山梨県南都留郡山中湖村平野字上原1061
+            </p>
+            <p class="tel-txt">TEL:<a href="tel:05088881061">050-8888-1061</a></p>
+            <p class="reception-txt">受付時間：9：00～18：00</p>
+          </div>
+          <div class="r-box">
+            <div class="btn-box">
+              <div class="item">
+                <a href="mailto:kanoa.fujiyamanakako@gmail.com?subject=【カノア 富士山中湖 ヴィラ】お問い合わせ&amp;cc=k.tokunaga@kanoagp.com" class="button01">メール問合はこちら</a>
+              </div>
+              <div class="item">
+                <a href="https://reserve.489ban.net/client/gr-kanoa/0/plan/stay?planTags%5B21498%5D=1&amp;searchTagMode=0&amp;keepTags=2" class="button02" target="_blank">ご予約はこちら</a>
+              </div>
+            </div>
+            <nav class="nav-list">
+              <div>
+                <ul class="menu">
+                  <li>
+                    <a href="index.html">トップページ</a>
+                  </li>
+                  <li>
+                    <a href="room.html">お部屋</a>
+                  </li>
+                  <li>
+                    <a href="spa.html">客室温泉</a>
+                  </li>
+                  <li>
+                    <a href="sauna.html">客室サウナ</a>
+                  </li>
+                  <li>
+                    <a href="meal.html">お食事</a>
+                  </li>
+                  <li>
+                    <a href="news_index.html">お知らせ</a>
+                  </li>
+                  <li>
+                    <a href="index.html#access">アクセス</a>
+                  </li>
+                  <li>
+                    <a href="surrounding_index.html">周辺観光</a>
+                  </li>
+                  <li>
+                    <a href="qa.html">よくある質問</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="copy">© 2023-2025 Booking Resort, Inc.</p>
+    </footer>
+    <script>
+      const mySwiper = new Swiper(".room-swiper", {
+        loop: true,
+        slidesPerView: 1.3,
+        centeredSlides: true,
+
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+          waitForTransition: false,
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          869: {
+            slidesPerView: 2,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

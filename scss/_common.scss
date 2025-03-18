@@ -1,0 +1,517 @@
+@charset "UTF-8";
+@use "settings" as *;
+@use "utility" as *;
+@use "core" as *;
+
+// --------------------------------------------------
+// ボタン
+// --------------------------------------------------
+.button01,
+.wp-block-button .wp-block-button__link {
+  font-weight: 500;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  color: $base-f-color;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid $primary;
+  padding: 12px 20px;
+  transition: 0.3s;
+  &:hover {
+    background: $primary;
+    color: #fff;
+  }
+  &.-white {
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      color: $primary;
+      background: #fff;
+    }
+  }
+}
+
+.button02,
+.wp-block-button.is-style-outline > .wp-block-button__link {
+  @extend .button01;
+  background: $primary;
+  color: #fff;
+  &:hover {
+    color: $primary;
+    background: rgba($primary, 0);
+  }
+}
+
+.button03 {
+  text-decoration: none;
+  color: $base-f-color;
+  display: inline-block;
+  padding: 15px 60px 15px 0;
+  position: relative;
+
+  &:after {
+    content: "\f105";
+    font: {
+      weight: 900;
+      family: $f-fa;
+    }
+    text-align: center;
+    line-height: 50px;
+    color: $primary;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  &:hover {
+    &:after {
+      transform: translateY(-50%) scale(1.1);
+    }
+  }
+}
+// --------------------------------------------------
+// テーブル
+// --------------------------------------------------
+.table01,
+.wp-block-table > .has-fixed-layout {
+  width: 100%;
+  tbody {
+    tr {
+      th,
+      td {
+        vertical-align: top;
+        border: 1px solid #fff;
+        padding: 20px 20px;
+      }
+      th {
+        font-weight: 500;
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-tb) {
+    border-bottom: 1px solid #fff;
+    tbody {
+      tr {
+        th,
+        td {
+          display: block;
+          width: 100% !important;
+          border-bottom: 0;
+
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+
+.table02,
+.wp-block-table.is-style-stripes > .has-fixed-layout {
+  width: 100%;
+  tbody {
+    tr {
+      th,
+      td {
+        vertical-align: top;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 30px 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-tb) {
+    border-bottom: 1px solid #ccc;
+    tbody {
+      tr {
+        th,
+        td {
+          width: 100% !important;
+          display: block;
+          border-bottom: 0;
+          padding: 20px 10px;
+        }
+        th {
+          padding-bottom: 3px;
+        }
+        td {
+          border-top: 0;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// 見出し
+// --------------------------------------------------
+h3 {
+  &.top {
+    font: {
+      size: 2.6rem;
+      weight: 500;
+    }
+    line-height: 2;
+    writing-mode: vertical-rl;
+    @media only screen and (max-width: $screen-tb) {
+      font-size: 2rem;
+      writing-mode: unset;
+    }
+  }
+  &:not(.top) {
+    font: {
+      size: 3rem;
+    }
+    text-align: center;
+    margin-bottom: 50px;
+    @media only screen and (max-width: $screen-tb) {
+      font-size: 2.7rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+h4 {
+  &.top {
+    font: {
+      size: 2.2rem;
+      weight: 500;
+    }
+    margin-bottom: 50px;
+    line-height: 2;
+    @media only screen and (max-width: $screen-tb) {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+    }
+  }
+  &:not(.top) {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 40px;
+    &:before,
+    &:after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+    }
+    &:before {
+      width: 150px;
+      background: $primary;
+      left: 0;
+    }
+    &:after {
+      width: calc(100% - 150px);
+      background: #fff;
+      right: 0;
+    }
+    @media only screen and (max-width: $screen-tb) {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      &:before {
+        width: 100px;
+      }
+      &:after {
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}
+
+h5 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  @media only screen and (max-width: $screen-tb) {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+}
+
+.en-ttl {
+  font: {
+    size: 3.8rem;
+    weight: 500;
+  }
+  margin-bottom: 10px;
+  @media only screen and (max-width: $screen-tb) {
+    font-size: 2rem;
+  }
+}
+
+// --------------------------------------------------
+// リスト
+// --------------------------------------------------
+.dot-list,
+ul.wp-block-list {
+  & > * + * {
+    margin-top: 10px;
+  }
+  & > li {
+    padding-left: 25px;
+    position: relative;
+
+    &:before {
+      content: "\f111";
+      font: {
+        weight: 900;
+        family: $f-fa;
+      }
+      position: absolute;
+      top: 1px;
+      left: 0;
+      color: $primary;
+    }
+  }
+}
+
+.num-list,
+ol.wp-block-list {
+  counter-reset: section;
+  & > * + * {
+    margin-top: 10px;
+  }
+  & > li {
+    padding-left: 35px;
+    position: relative;
+    &:before {
+      counter-increment: section;
+      content: counter(section) ".";
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $primary;
+    }
+  }
+}
+
+.news-list {
+  border-top: 1px solid #ccc;
+  & > li {
+    border-bottom: 1px solid #ccc;
+    padding: 25px 0;
+    & > time {
+      width: 100px;
+      display: inline-block;
+    }
+    & > a {
+      color: $base-f-color;
+      display: inline-block;
+    }
+    @media only screen and (max-width: $screen-tb) {
+      & > time {
+        margin-bottom: 5px;
+      }
+      & > a {
+        display: block;
+      }
+    }
+  }
+}
+.sightseeing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 2%;
+  & > li {
+    width: 32%;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(#000, 0.16);
+    .img-box {
+      width: 100%;
+      padding-bottom: 66%;
+      position: relative;
+      & > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+    .txt-box {
+      padding: 20px;
+      & > .ttl {
+        font: {
+          size: 1.8rem;
+          weight: 700;
+        }
+        margin-bottom: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-tb) {
+    & > li {
+      width: 49%;
+    }
+  }
+  @media only screen and (max-width: $screen-sp) {
+    & > li {
+      width: 100%;
+    }
+  }
+}
+
+.qa-list {
+  & > * + * {
+    margin-top: 50px;
+  }
+  & > li {
+    & > p {
+      padding-left: 40px;
+      position: relative;
+      &:before {
+        font-size: 2.2rem;
+        line-height: 1;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media only screen and (max-width: $screen-tb) {
+          font-size: 2rem;
+        }
+      }
+      &.q-txt {
+        font-weight: 700;
+        margin-bottom: 15px;
+        &:before {
+          content: "Q";
+          color: $primary;
+        }
+      }
+      &.a-txt {
+        &:before {
+          content: "A";
+        }
+      }
+    }
+  }
+}
+.anchor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 4%;
+  margin-bottom: 80px;
+  & > li {
+    width: 22%;
+    display: table;
+    & > a {
+      text: {
+        align: center;
+        decoration: none;
+      }
+      color: #fff;
+      display: table-cell;
+      vertical-align: middle;
+      background: $primary;
+      border-radius: 35px;
+      position: relative;
+      padding: 12px 30px;
+      border: 1px solid $primary;
+      transition: 0.3s;
+      &:after {
+        content: "\f107";
+        font: {
+          weight: 900;
+          family: $f-fa;
+        }
+        margin-left: 10px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        color: $primary;
+        background: #fff;
+      }
+    }
+  }
+  @media only screen and (max-width: $screen-tb) {
+    gap: 10px 2%;
+    & > li {
+      width: 100%;
+    }
+  }
+}
+
+// --------------------------------------------------
+// 引用
+// --------------------------------------------------
+blockquote {
+}
+
+// --------------------------------------------------
+// アコーディオン
+// --------------------------------------------------
+.wp-block-details {
+  summary {
+  }
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  & > li {
+    & > .page-numbers {
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      line-height: 28px;
+      color: $primary;
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $primary;
+      border-radius: 3px;
+      transition: 0.3s;
+      &.dots {
+        border: unset;
+        margin: 0 -5px;
+      }
+      &.current,
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
+      &.next,
+      &.prev {
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.g-map {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  & > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  @media only screen and (max-width: $screen-tb) {
+    padding-bottom: 70%;
+  }
+}
+
+.white-txt {
+  color: #fff;
+}
