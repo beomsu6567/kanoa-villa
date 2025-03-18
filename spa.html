@@ -25,12 +25,14 @@
     <script src="js/aos.js"></script>
     <script src="js/common.js"></script>
     <script>
-      AOS.init({
-        offset: 200,
-        duration: 1000,
-        easing: "ease-in-sine",
-        delay: 0,
-        once: true,
+      $(window).on("load", function () {
+        AOS.init({
+          offset: 200,
+          duration: 1000,
+          easing: "ease-in-sine",
+          delay: 0,
+          once: true,
+        });
       });
     </script>
     <header>
