@@ -5823,6 +5823,18 @@ ol.wp-block-list > li:before {
   color: #fff;
 }
 
+.wall-bg {
+  background: url("img/common/witewall_3.jpg") repeat left top/400px 400px;
+  padding: 120px 0;
+  margin-bottom: 120px;
+}
+@media only screen and (max-width: 868px) {
+  .wall-bg {
+    padding: 0 0 60px;
+    margin-bottom: 60px;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
@@ -5833,6 +5845,9 @@ header {
   border-radius: 0 0 10px 0;
 }
 header .logo-box > a {
+  text-decoration: none;
+  text-align: center;
+  color: #333;
   display: inline-block;
 }
 header .logo-box > a img {
@@ -5850,42 +5865,48 @@ header .logo-box > a img {
 
 .header-others-btn {
   position: fixed;
-  top: 31px;
+  top: 26px;
   right: 100px;
   z-index: 100;
 }
 .header-others-btn > a {
-  font-size: 1.8rem;
   text-decoration: none;
-  color: #fff;
+  color: #333;
   display: inline-block;
   position: relative;
   transition: 0.3s;
-}
-.header-others-btn > a:before {
-  content: "";
-  width: 0;
-  height: 1px;
   background: #fff;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transition: 0.3s;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 0 5px;
 }
-.header-others-btn > a:hover:before {
-  width: 100%;
-  left: 0;
+.header-others-btn > a:hover {
+  color: #fff;
+  background: #333;
 }
-.header-others-btn.-scroll > a {
+.header-others-btn > a:nth-of-type(2) {
+  color: #fff;
+  background: #333;
+}
+.header-others-btn > a:nth-of-type(2):hover {
   color: #333;
+  background: #fff;
 }
 @media only screen and (max-width: 868px) {
   .header-others-btn {
-    top: 26px;
-    right: 80px;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
   }
   .header-others-btn > a {
-    font-size: 1.4rem;
+    text-align: center;
+    display: block;
+    width: 50%;
+    border-radius: 0;
+    margin: 0;
+    padding: 20px;
   }
 }
 
@@ -5952,46 +5973,6 @@ header .logo-box > a img {
   }
 }
 
-.right-fixed-btn {
-  font-size: 1.4rem;
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 60px;
-  background: rgba(231, 220, 208, 0.8);
-  padding: 30px 22px;
-  border-radius: 3px 0 0 3px;
-  z-index: 30;
-}
-.right-fixed-btn > .jp-txt {
-  font-weight: 700;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #999;
-}
-.right-fixed-btn > .en-txt {
-  word-wrap: break-word;
-}
-@media only screen and (max-width: 868px) {
-  .right-fixed-btn {
-    width: 30px;
-    padding: 25px 10px;
-    top: 100px;
-    transform: translateY(0);
-  }
-  .right-fixed-btn > .jp-txt {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 0;
-  }
-  .right-fixed-btn > .en-txt {
-    display: none;
-  }
-}
-
 .slide-menu {
   position: fixed;
   top: 0;
@@ -6010,8 +5991,18 @@ header .logo-box > a img {
 }
 .slide-menu .logo-box {
   width: 100%;
-  max-width: 130px;
+  max-width: 300px;
   margin: 0 auto 30px;
+}
+.slide-menu .logo-box .img-box {
+  text-align: center;
+}
+.slide-menu .logo-box .img-box > a {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
 }
 .slide-menu .lang-btn {
   top: 25px;
@@ -6205,8 +6196,13 @@ header .logo-box > a img {
   z-index: 3;
 }
 .key-visual.-top .key-txt .logo-box {
+  font-size: 6rem;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
+  text-shadow: #4d4d4d 1px 1px 6px, #4d4d4d -1px 1px 6px;
+  margin-bottom: 30px;
 }
 .key-visual.-top .key-txt .logo-box > img {
   width: 220px;
@@ -6220,6 +6216,7 @@ header .logo-box > a img {
 }
 @media only screen and (max-width: 868px) {
   .key-visual.-top .key-txt .logo-box {
+    font-size: 4rem;
     margin-bottom: 15px;
   }
   .key-visual.-top .key-txt .logo-box > img {
@@ -6331,6 +6328,9 @@ main {
   main {
     padding: 80px 0;
   }
+}
+body.home main {
+  padding-top: 0;
 }
 
 #resort-rg {
@@ -6550,6 +6550,7 @@ footer .copy {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    writing-mode: unset;
     gap: 20px 0;
   }
   .top-first .txt-box .txt > p {
@@ -6560,7 +6561,7 @@ footer .copy {
 .next-content {
   max-width: 1440px;
   width: calc(100% - 120px);
-  margin: 0 auto 120px;
+  margin: 0 auto;
   position: relative;
 }
 .next-content .img-box {
@@ -6590,6 +6591,7 @@ footer .copy {
 @media only screen and (max-width: 868px) {
   .next-content {
     width: calc(100% - 60px);
+    margin-bottom: 0;
   }
   .next-content .img-box {
     position: relative;

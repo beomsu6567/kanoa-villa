@@ -34,6 +34,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        writing-mode: unset;
         gap: 20px 0;
         & > p {
           margin-left: 0;
@@ -46,7 +47,7 @@
 .next-content {
   max-width: 1440px;
   width: calc(100% - 120px);
-  margin: 0 auto 120px;
+  margin: 0 auto;
   position: relative;
   .img-box {
     width: 100%;
@@ -74,6 +75,7 @@
   }
   @media only screen and (max-width: $screen-tb) {
     width: calc(100% - 60px);
+    margin-bottom: 0;
     .img-box {
       position: relative;
       width: 100%;

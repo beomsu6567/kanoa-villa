@@ -515,3 +515,13 @@ blockquote {
 .white-txt {
   color: #fff;
 }
+
+.wall-bg {
+  background: url("img/common/witewall_3.jpg") repeat left top / 400px 400px;
+  padding: 120px 0;
+  margin-bottom: 120px;
+  @media only screen and (max-width: $screen-tb) {
+    padding: 0 0 60px;
+    margin-bottom: 60px;
+  }
+}

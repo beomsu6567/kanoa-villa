@@ -16,6 +16,11 @@ header {
   border-radius: 0 0 10px 0;
   .logo-box {
     & > a {
+      text: {
+        decoration: none;
+        align: center;
+      }
+      color: $base-f-color;
       display: inline-block;
       img {
         width: 72px;
@@ -37,45 +42,45 @@ header {
 
 .header-others-btn {
   position: fixed;
-  top: 31px;
+  top: 26px;
   right: 100px;
   z-index: 100;
   & > a {
-    font: {
-      size: 1.8rem;
-    }
     text-decoration: none;
-    color: #fff;
+    color: $base-f-color;
     display: inline-block;
     position: relative;
     transition: 0.3s;
-    &:before {
-      content: "";
-      width: 0;
-      height: 1px;
-      background: #fff;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      transition: 0.3s;
-    }
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 0 5px;
     &:hover {
-      &:before {
-        width: 100%;
-        left: 0;
+      color: #fff;
+      background: $base-f-color;
+    }
+    &:nth-of-type(2) {
+      color: #fff;
+      background: $base-f-color;
+      &:hover {
+        color: $base-f-color;
+        background: #fff;
       }
     }
   }
-  &.-scroll {
-    & > a {
-      color: #333;
-    }
-  }
   @media only screen and (max-width: $screen-tb) {
-    top: 26px;
-    right: 80px;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
     & > a {
-      font-size: 1.4rem;
+      text-align: center;
+      display: block;
+      width: 50%;
+      border-radius: 0;
+      margin: 0;
+      padding: 20px;
     }
   }
 }
@@ -148,43 +153,6 @@ header {
     right: 10px;
   }
 }
-.right-fixed-btn {
-  font-size: 1.4rem;
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: 60px;
-  background: rgba(#e7dcd0, 0.8);
-  padding: 30px 22px;
-  border-radius: 3px 0 0 3px;
-  z-index: 30;
-  & > .jp-txt {
-    font-weight: 700;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #999;
-  }
-  & > .en-txt {
-    word-wrap: break-word;
-  }
-  @media only screen and (max-width: $screen-tb) {
-    width: 30px;
-    padding: 25px 10px;
-    top: 100px;
-    transform: translateY(0);
-    & > .jp-txt {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: 0;
-    }
-    & > .en-txt {
-      display: none;
-    }
-  }
-}
 .slide-menu {
   position: fixed;
   top: 0;
@@ -202,8 +170,22 @@ header {
 
   .logo-box {
     width: 100%;
-    max-width: 130px;
+    max-width: 300px;
     margin: 0 auto 30px;
+    .img-box {
+      text-align: center;
+      & > a {
+        font: {
+          size: 2rem;
+        }
+        text: {
+          align: center;
+          decoration: none;
+        }
+        color: #fff;
+        display: inline-block;
+      }
+    }
   }
   .lang-btn {
     top: 25px;
@@ -427,8 +409,15 @@ header {
       transform: translate(-50%, -50%);
       z-index: 3;
       .logo-box {
+        font: {
+          size: 6rem;
+          weight: 700;
+        }
         text-align: center;
         margin-bottom: 20px;
+        color: #fff;
+        text-shadow: #4d4d4d 1px 1px 6px, #4d4d4d -1px 1px 6px;
+        margin-bottom: 30px;
         & > img {
           width: 220px;
         }
@@ -446,6 +435,7 @@ header {
     @media only screen and (max-width: $screen-tb) {
       .key-txt {
         .logo-box {
+          font-size: 4rem;
           margin-bottom: 15px;
           & > img {
             width: 130px;
@@ -559,6 +549,9 @@ main {
   overflow: hidden;
   @media only screen and (max-width: $screen-tb) {
     padding: 80px 0;
+  }
+  body.home & {
+    padding-top: 0;
   }
 }
 
