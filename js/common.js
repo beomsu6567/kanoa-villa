@@ -17,4 +17,8 @@ $(function () {
       $(".slide-menu-btn").removeClass("-scroll");
     }
   });
+
+  $(".slide-menu a").on("click", function () {
+    $("#slide-menu-check").prop("checked", false);
+  });
 });

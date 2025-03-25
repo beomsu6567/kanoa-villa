@@ -682,6 +682,14 @@ footer {
       width: 250px;
       .logo-box {
         margin-bottom: 20px;
+        & > a {
+          color: $base-f-color;
+          display: inline-block;
+          text: {
+            decoration: none;
+            align: center;
+          }
+        }
       }
       .address-txt {
         font-size: 1.2rem;

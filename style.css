@@ -5835,6 +5835,10 @@ ol.wp-block-list > li:before {
   }
 }
 
+.news-content {
+  text-align: left;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -6445,6 +6449,12 @@ footer .f-wrap .l-box {
 }
 footer .f-wrap .l-box .logo-box {
   margin-bottom: 20px;
+}
+footer .f-wrap .l-box .logo-box > a {
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
 }
 footer .f-wrap .l-box .address-txt {
   font-size: 1.2rem;
