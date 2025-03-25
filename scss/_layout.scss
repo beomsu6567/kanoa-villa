@@ -29,7 +29,7 @@ header {
   }
   @media only screen and (max-width: $screen-tb) {
     left: 0;
-    padding: 5px 20px 10px;
+    padding: 5px 15px 10px;
     .logo-box {
       & > a {
         & > img {
@@ -81,6 +81,23 @@ header {
       border-radius: 0;
       margin: 0;
       padding: 20px;
+      &:nth-of-type(1) {
+        font-size: 1.2rem;
+        position: fixed;
+        top: 17px;
+        right: 63px;
+        padding: 10px 15px;
+        width: auto;
+        border-radius: 20px;
+      }
+    }
+    &.-scroll {
+      & > a {
+        &:nth-of-type(1) {
+          color: #fff;
+          background: $base-f-color;
+        }
+      }
     }
   }
 }
@@ -89,6 +106,7 @@ header {
   &:checked + .slide-menu-btn {
     .bdr-box {
       & > span {
+        background: #fff;
         &:nth-of-type(1) {
           transform: rotate(45deg);
         }
@@ -103,6 +121,14 @@ header {
     & + .slide-menu {
       opacity: 1;
       visibility: visible;
+      & + .header-others-btn {
+        & > a {
+          &:nth-of-type(1) {
+            color: $base-f-color;
+            background: #fff;
+          }
+        }
+      }
     }
   }
 }
@@ -113,7 +139,7 @@ header {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 102;
   .bdr-box {
     width: 30px;
     height: 30px;
@@ -166,7 +192,7 @@ header {
   backdrop-filter: blur(10px);
   overflow: auto;
   padding: 92px 40px;
-  z-index: 99;
+  z-index: 101;
 
   .logo-box {
     width: 100%;
@@ -544,7 +570,7 @@ body {
   background: #000;
 }
 main {
-  background: $bg-color;
+  background: #fff;
   padding: 120px 0;
   overflow: hidden;
   @media only screen and (max-width: $screen-tb) {
